@@ -13,8 +13,7 @@ class Application
   end
 
   def get_code : Array
-    input_value = gets.to_s.chomp.split(" ")
-    return input_value
+     return gets.to_s.chomp.split(" ")
   end
 end
 
