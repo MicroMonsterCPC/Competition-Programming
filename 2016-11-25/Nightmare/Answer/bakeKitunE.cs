@@ -13,7 +13,6 @@ class Program
         List<string> line2 = Console.ReadLine().Split(' ').ToList();
         List<string> line3 = Console.ReadLine().Split(' ').ToList();
         int count = int.Parse(Console.ReadLine());
-        string[] command = new string[2];
 
         lines.Add(line1);
         lines.Add(line2);
@@ -21,7 +20,7 @@ class Program
 
         for (int i = 0; i < count; i++)
         {
-            command = Console.ReadLine().Split(' ');
+            var command = Console.ReadLine().Split(' ');
 
             Move(command);
 
@@ -29,11 +28,7 @@ class Program
 
         foreach (var line in lines)
         {
-            foreach (var outPut in line)
-            {
-                Console.Write("{0} ", outPut);
-            }
-            Console.WriteLine();
+            Console.WriteLine(string.Join(" ", line));
         }
     }
 
