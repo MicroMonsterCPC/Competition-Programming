@@ -113,7 +113,7 @@ left 2A
 1 9 9 8
 0 5 1 9
 3 8 2 9
-3
+4
 left 2D
 top 1B
 right 1C
