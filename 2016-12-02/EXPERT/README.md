@@ -29,17 +29,17 @@ abcdefg
 ##出力値2
 
 ~~~
-cegg
+cgkg
 ~~~
 
-##入力値2
+##入力値3
 
 ~~~
 jdfalnvqoi
 ~~~
 
-##出力値2
+##出力値3
 
 ~~~
-ngzcx
+ngzmx
 ~~~
