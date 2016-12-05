@@ -5,11 +5,9 @@ namespace memo {
     static void Main(string[] args) {
       string input = Console.ReadLine();
       int len = input.Length;
-      input = (len % 2 == 1) ? input + "0" : input;
-      len = input.Length;
       int num1 = 0;
       string[] AtoZ = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
-      for (int i = 0; i < len / 2 ; i++) {
+      for (int i = 0; i < len / 2; i++) {
         int answer = 0;
         string str_answer = "";
         for (int k = 0; k < 2; k++) {
@@ -29,11 +27,16 @@ namespace memo {
               num2++;
             }
             answer += int_word;
+            answer = (answer > 26) ? answer - 26 : answer;
             str_answer = AtoZ[answer - 1];
           }
           num1++;
         }
         Console.Write(str_answer);
+      }
+      if (len % 2 == 1) {
+        string ketu = input.Substring(len - 1, 1);
+        Console.WriteLine(ketu);
       }
     }
   }
