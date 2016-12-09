@@ -1,7 +1,7 @@
 class Application
-	def main
-		processing( split_value(input) )
-	end
+  def main
+    processing( split_value(input) )
+  end
 
   def processing( s_value : Array )
     value_length = s_value.size
@@ -11,13 +11,13 @@ class Application
     end
   end
 
-	def split_value(value : String) : Array
+  def split_value(value : String) : Array
     return value.split("_")
-	end
+  end
 
-	def input : String
-		return gets.to_s.chomp
-	end
+  def input : String
+    return gets.to_s.chomp
+  end
 end
 
 class String
